@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+body {
+    background-color: rgb(255,255,255);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-family: 'Montserrat';
+    transition: all 0.2s;
+    font-size: 1vw;
+}
+
+a:hover {
+    color: rgb(00,238,255);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0.6vw 1vw;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-title-kedron {
+    font-family: 'Great Vibes';
+    font-size: 3vw;
+    color: rgb(00,238,255);
+    padding-left: 0.5vw;
+    letter-spacing: 0.3vw;
+    transition: all 0.5s ease-out 0.2s;
+}
+
+#header-logo {
+    height: 4vw;
+}
+
+#header-nav {
+    align-items: center;
+}
+
+#header-ul {
+    list-style: none;
+}
+
+.header-li {
+    display: inline-block;
+    padding-right: 2vw;
+}
+
+#header-button {
+    border: 0.25vw solid rgb(00,238,255);
+    background-color: rgb(255,255,255);
+    border-radius: 1vw;
+    margin-right: 1vw;
+    padding: 0.4vw;
+    color: rgb(0,0,0);
+    font-family: 'Montserrat';
+    font-size: 1vw;
+    transition: all 0.5s ease-out 0.2s;
+}
+
+#header-button:hover {
+    color: rgb(00,238,255);
+    cursor: pointer;
+}
+
+#background {
+    background-color: rgb(255,255,255);
+    width: 100%;
+    background-image: url("../images/logo/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 1vw 1vw;
+}
+
+#bg-kedron {
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: 'Great Vibes';
+    font-size: 6vw;
+    letter-spacing: 0.3vw;
+}
+
+#bg-slogan {
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: 'Montserrat';
+    font-size: 1vw;
+}
+
+#bg-offer {
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: 'Montserrat';
+    font-size: 1vw;
+}
+
+#about {
+    width: 100%;
+    background: rgb(242, 242, 242);
+}
+
+.major-headings {
+    font-size: 5vw;
+    z-index: 2;
+    position: relative;
+    color: rgb(0,238,255);
+    font-family: 'Tangerine';
+}
+
+.major-headings::after {
+    content: "";
+    display:block;
+    width: 83vw;
+    height: 0.4vw;
+    background: rgb(0,238,255);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+#mode-title::after {
+    width: 82vw;
+}
+
+.kedron {
+    font-family: 'Great Vibes';
+}
+
+.p {
+    display:flex;
+    align-items: center;
+    width: 50vw;
+    font-family: 'Red Hat Mono';
+    font-size: 1.2vw;
+    margin-left: 2vw;
+}
+
+#about-images-text {
+    display: grid;
+    grid-template-areas: 
+    "about-p coach-1"
+    "about-p coach-2";
+    gap: 1vw;
+}
+
+#about-images-text > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#about-p {
+    grid-area: about-p;
+}
+
+#coach-1 {
+    grid-area: coach-1;
+}
+
+#coach-2 {
+    grid-area: coach-2;
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border: solid 0.2vw rgb(0,238,255);
+}
+
+#select-mode {
+    box-shadow: rgba(0, 0, 0, 0.35) 0vw -1vw 1vw;
+}
+
+.minor-headings {
+    font-family: 'Montserrat';
+    font-size: 1vw;
+}
+
+#mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.mode-icon {
+    width: 8vw;
+    transition: all 0.5s ease-out 0.2s;
+}
+
+.mode-icon:hover {
+    filter: brightness(0.6);
+}
+
+.subt {
+    color: rgb(0,0,0);
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.shadows {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 1vw 1vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
